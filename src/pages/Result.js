@@ -19,7 +19,6 @@ const Result = () => {
     setResultData(result);
   }, [mbti]);
 
-  console.log(mbti);
   return (
     <Wrapper>
       <Header>예비집사 판별기</Header>
