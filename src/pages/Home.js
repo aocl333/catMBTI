@@ -24,7 +24,7 @@ const Home = () => {
             className="rounded-circle"
             width={350}
             height={350}
-            alt=""
+            alt="고양이 사진"
           ></img>
         </LogoImage>
         <Desc>MBTI를 기반으로 하는 나랑 잘 맞는 고양이 찾기!</Desc>
