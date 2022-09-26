@@ -21,7 +21,7 @@ const KakaoShareButton = ({ data }) => {
         imageUrl: url + data.image,
         link: {
           mobileWebUrl: resultUrl,
-          WebUrl: resultUrl,
+          webUrl: resultUrl,
         },
       },
       buttons: [
@@ -29,7 +29,7 @@ const KakaoShareButton = ({ data }) => {
           title: "나도 테스트 하러가기",
           link: {
             mobileWebUrl: url,
-            WebUrl: url,
+            webUrl: url,
           },
         },
       ],
