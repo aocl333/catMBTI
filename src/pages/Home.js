@@ -53,7 +53,7 @@ const LogoImage = styled.div`
   margin: 0 auto;
   text-align: center;
   img {
-    width: 70%;
+    width: 50%;
   }
 `;
 
