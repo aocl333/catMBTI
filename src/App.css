@@ -1,8 +1,17 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
   font-family: "SimKyungha";
+  background-color: #f5f5f5;
 }
 
 @font-face {
   font-family: "SimKyungha";
   src: url(/src/assets/fonts/SimKyungha.otf);
+}
+
+:root {
+  --primary-color: #4c21d4;
+  --primary-shadow-color: rgba(96, 27, 250, 0.3);
+  --primary-hover-color: #601bfa;
 }

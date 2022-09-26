@@ -2,7 +2,6 @@ import React from "react";
 //css-in-js
 import styled from "styled-components";
 // import PangImage from "../assets/ggompang.jpeg";
-import Button from "react-bootstrap/Button";
 import { ResultData } from "../assets/data/resultdata";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import KakaoShareButton from "../component/KakaoShareButton";
@@ -25,22 +24,14 @@ const Result = () => {
       <Contents>
         <Title>결과보기</Title>
         <LogoImage>
-          <img
-            src={resultData.image}
-            className="rounded-circle"
-            width={350}
-            height={350}
-            alt="고양이 사진"
-          ></img>
+          <img src={resultData.image} alt="고양이 사진"></img>
         </LogoImage>
-        <Desc>예비 집사님과 찰떡궁합인 고양이는 {resultData.name}입니다.</Desc>
+        <Desc>
+          예비 집사님과 찰떡궁합인 고양이는 {resultData.name}입니다.
+          {resultData.desc}
+        </Desc>
         <ButtonGroup>
-          <Button
-            style={{ fontFamily: "SimKyungha", width: 170 }}
-            onClick={() => navigate("/")}
-          >
-            테스트 다시하기
-          </Button>
+          <Button onClick={() => navigate("/")}>테스트 다시하기</Button>
           <KakaoShareButton data={resultData} />
         </ButtonGroup>
       </Contents>
@@ -51,8 +42,10 @@ const Result = () => {
 export default Result;
 
 const Wrapper = styled.div`
-  height: 100vh;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 40px 0 110px;
+  text-align: center;
 `;
 
 const Header = styled.div`
@@ -85,6 +78,15 @@ const Desc = styled.div`
 `;
 
 const ButtonGroup = styled.div`
-  display: flex;
-  flex-direction: row;
+  margin-top: 30px;
+`;
+
+const Button = styled.div`
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px 50px 17px;
+  border-radius: 15px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
 `;

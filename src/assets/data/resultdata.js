@@ -1,19 +1,19 @@
-import Abyssinian from "../cat/abyssinian.jpg";
+import Abyssinian from "../cat/abyssinian.png";
 import Ameshort from "../cat/ameshort.png";
-import Bengal from "../cat/bengal.jpg";
-import British from "../cat/british.jpg";
-import Exotic from "../cat/exotic.jpg";
-import Korshort from "../cat/korshort.jpg";
-import Mainecoon from "../cat/mainecoon.jpeg";
-import Munchkin from "../cat/munchkin.jpg";
-import Norwegianforest from "../cat/norwegianforest.jpg";
-import Persian from "../cat/persian.jpg";
-import Ragdoll from "../cat/ragdoll.jpg";
-import Russianblue from "../cat/russianblue.jpg";
-import Scottishfold from "../cat/scottishfold.jpg";
-import Siamese from "../cat/siamese.jpg";
-import Sphinx from "../cat/sphinx.jpg";
-import Turkishangora from "../cat/turkishangora.jpg";
+import Bengal from "../cat/bengal.png";
+import British from "../cat/russianblue.png";
+import Exotic from "../cat/exotic.png";
+import Korshort from "../cat/korshort.png";
+import Mainecoon from "../cat/mainecoon.png";
+import Munchkin from "../cat/exotic.png";
+import Norwegianforest from "../cat/norwegianforest.png";
+import Persian from "../cat/persian.png";
+import Ragdoll from "../cat/ragdoll.png";
+import Russianblue from "../cat/russianblue.png";
+import Scottishfold from "../cat/scottishfold.png";
+import Siamese from "../cat/siamese.png";
+import Sphinx from "../cat/sphinx.png";
+import Turkishangora from "../cat/turkishangora.png";
 
 export const ResultData = [
   {

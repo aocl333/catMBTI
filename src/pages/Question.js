@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ProgressBar, Button } from "react-bootstrap";
+import { ProgressBar } from "react-bootstrap";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import { QuestionData } from "../assets/data/questiondata";
 
@@ -69,30 +69,21 @@ const Question = () => {
         variant="danger"
         now={(questionNo / QuestionData.length) * 100}
       />
-      <Title>{QuestionData[questionNo].title}</Title>
-      <ButttonGroup>
-        <Button
-          onClick={() => handleCLickButton(1, QuestionData[questionNo].type)}
-          style={{
-            width: "40%",
-            minHeight: "200px",
-            fontSize: "15pt",
-          }}
-        >
-          {QuestionData[questionNo].answera}
-        </Button>
-        <Button
-          onClick={() => handleCLickButton(0, QuestionData[questionNo].type)}
-          style={{
-            width: "40%",
-            minHeight: "200px",
-            fontSize: "15pt",
-            marginLeft: "20px",
-          }}
-        >
-          {QuestionData[questionNo].answerb}
-        </Button>
-      </ButttonGroup>
+      <Content>
+        <Title>{QuestionData[questionNo].title}</Title>
+        <ButttonGroup>
+          <Button
+            onClick={() => handleCLickButton(1, QuestionData[questionNo].type)}
+          >
+            {QuestionData[questionNo].answera}
+          </Button>
+          <Button
+            onClick={() => handleCLickButton(0, QuestionData[questionNo].type)}
+          >
+            {QuestionData[questionNo].answerb}
+          </Button>
+        </ButttonGroup>
+      </Content>
     </Wrapper>
   );
 };
@@ -104,16 +95,31 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const Title = styled.div`
-  font-size: 30pt;
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 40px 0 110px;
   text-align: center;
-  font-family: "SimKyungha";
+`;
+
+const Title = styled.div`
+  font-size: 25pt;
+  text-align: center;
+  margin-top: 40px;
 `;
 
 const ButttonGroup = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-family: "SimKyungha";
+  margin-top: 30px;
+`;
+
+const Button = styled.div`
+  background-color: #fff;
+  border: 0;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px 0;
+  padding: 20px 25px;
+  width: 100%;
+  cursor: pointer;
 `;

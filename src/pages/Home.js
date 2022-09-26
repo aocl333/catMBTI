@@ -2,7 +2,6 @@ import React from "react";
 //css-in-js
 import styled from "styled-components";
 import PangImage from "../assets/ggompang.jpeg";
-import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -28,12 +27,7 @@ const Home = () => {
           ></img>
         </LogoImage>
         <Desc>MBTI를 기반으로 하는 나랑 잘 맞는 고양이 찾기!</Desc>
-        <Button
-          style={{ fontFamily: "SimKyungha" }}
-          onClick={handleClikckButton}
-        >
-          테스트 시작하기
-        </Button>
+        <Button onClick={handleClikckButton}>테스트 시작하기</Button>
       </Contents>
     </Wrapper>
   );
@@ -51,7 +45,7 @@ const Header = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "SimKyungha";
+  margin-top: 40px;
 `;
 
 const Contents = styled.div`
@@ -73,4 +67,16 @@ const LogoImage = styled.div`
 const Desc = styled.div`
   font-size: 20pt;
   margin-top: 20px;
+`;
+
+const Button = styled.div`
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 0;
+  border-radius: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 50px;
+  padding: 20px 50px 17px;
+  cursor: pointer;
 `;

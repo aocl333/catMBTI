@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
+import styled from "styled-components";
 const { Kakao } = window;
 
 const KakaoShareButton = ({ data }) => {
@@ -35,13 +35,16 @@ const KakaoShareButton = ({ data }) => {
       ],
     });
   };
-  return (
-    <Button
-      onClick={shareKakao}
-      style={{ fontFamily: "SimKyungha", width: 170, marginLeft: "10px" }}
-    >
-      카카오톡 공유하기
-    </Button>
-  );
+  return <Button onClick={shareKakao}>카카오톡 공유하기</Button>;
 };
+
 export default KakaoShareButton;
+
+const Button = styled.div`
+  background-color: #f4d635;
+  color: #341d1d;
+  padding: 20px 50px 17px;
+  border-radius: 15px;
+  font-size: 25px;
+  cursor: pointer;
+`;
