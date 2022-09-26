@@ -16,7 +16,7 @@
 
 ## 🐱 예비집사mbti 링크
 
-[**🔗 예비집사mbti 링크**](https://aocl333-react-project.web.app/)
+[**🔗 예비집사mbti 링크**](https://catmbtiapp.netlify.app/)
 
 <br />
 
