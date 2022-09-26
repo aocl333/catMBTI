@@ -64,11 +64,7 @@ const Question = () => {
 
   return (
     <Wrapper>
-      <ProgressBar
-        striped
-        variant="danger"
-        now={(questionNo / QuestionData.length) * 100}
-      />
+      <ProgressBar striped now={(questionNo / QuestionData.length) * 100} />
       <Content>
         <Title>{QuestionData[questionNo].title}</Title>
         <ButttonGroup>
