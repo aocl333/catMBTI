@@ -113,7 +113,7 @@ const ButttonGroup = styled.div`
 `;
 
 const Button = styled.div`
-  background-color: #fff;
+  background-color: #f5f5f5;
   border: 0;
   border-radius: 15px;
   font-size: 22px;

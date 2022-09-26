@@ -1,7 +1,7 @@
 import React from "react";
 //css-in-js
 import styled from "styled-components";
-import PangImage from "../assets/ggompang.jpeg";
+import PangImage from "../assets/cat/main.png";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -14,17 +14,10 @@ const Home = () => {
 
   return (
     <Wrapper>
-      <Header>예비집사 판별기</Header>
+      <Header>예비집사 mbti</Header>
       <Contents>
-        <Title>나에게 맞는 주인님은?</Title>
         <LogoImage>
-          <img
-            src={PangImage}
-            className="rounded-circle"
-            width={350}
-            height={350}
-            alt="고양이 사진"
-          ></img>
+          <img src={PangImage} alt="고양이 사진"></img>
         </LogoImage>
         <Desc>MBTI를 기반으로 하는 나랑 잘 맞는 고양이 찾기!</Desc>
         <Button onClick={handleClikckButton}>테스트 시작하기</Button>
@@ -45,7 +38,8 @@ const Header = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 70px;
+  margin-bottom: 30px;
 `;
 
 const Contents = styled.div`
@@ -55,13 +49,12 @@ const Contents = styled.div`
   flex-direction: column;
 `;
 
-const Title = styled.div`
-  font-size: 30pt;
-  margin-top: 40px;
-`;
-
 const LogoImage = styled.div`
-  margin-top: 10px;
+  margin: 0 auto;
+  text-align: center;
+  img {
+    width: 70%;
+  }
 `;
 
 const Desc = styled.div`
@@ -74,9 +67,9 @@ const Button = styled.div`
   color: #fff;
   border: 0;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 700;
   margin-top: 50px;
-  padding: 20px 50px 17px;
+  padding: 15px 50px 15px;
   cursor: pointer;
 `;
