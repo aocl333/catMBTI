@@ -20,7 +20,6 @@ const Result = () => {
 
   return (
     <Wrapper>
-      <Header>예비집사 판별기</Header>
       <Contents>
         <Title>결과보기</Title>
         <LogoImage>
@@ -46,14 +45,6 @@ const Wrapper = styled.div`
   max-width: 600px;
   padding: 40px 0 110px;
   text-align: center;
-`;
-
-const Header = styled.div`
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "SimKyungha";
 `;
 
 const Contents = styled.div`
