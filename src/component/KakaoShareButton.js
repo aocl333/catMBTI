@@ -40,6 +40,7 @@ const KakaoShareButton = () => {
   };
   return (
     <Button
+      onClick={shareKakao}
       style={{ fontFamily: "SimKyungha", width: 170, marginLeft: "10px" }}
     >
       카카오톡 공유하기
