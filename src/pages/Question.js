@@ -96,12 +96,18 @@ const Content = styled.div`
   max-width: 600px;
   padding: 40px 0 110px;
   text-align: center;
+  @media (max-width: 760px) { 
+    padding: 40px 15px 110px;
+  }
 `;
 
 const Title = styled.div`
   font-size: 25pt;
   text-align: center;
   margin-top: 40px;
+  @media (max-width: 760px) { 
+    font-size: 18pt;
+  }
 `;
 
 const ButttonGroup = styled.div`
@@ -118,4 +124,7 @@ const Button = styled.div`
   padding: 20px 25px;
   width: 100%;
   cursor: pointer;
+  @media (max-width: 760px) { 
+    font-size: 14pt;
+  }
 `;

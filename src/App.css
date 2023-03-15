@@ -14,3 +14,7 @@
   --primary-shadow-color: rgba(96, 27, 250, 0.3);
   --primary-hover-color: #601bfa;
 }
+
+@media (max-width: 760px) { 
+  
+ }

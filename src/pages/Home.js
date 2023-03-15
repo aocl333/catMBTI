@@ -40,6 +40,9 @@ const Header = styled.div`
   align-items: center;
   margin-top: 70px;
   margin-bottom: 30px;
+  @media (max-width: 760px) { 
+    font-size: 35px;
+  }
 `;
 
 const Contents = styled.div`
@@ -54,12 +57,20 @@ const LogoImage = styled.div`
   text-align: center;
   img {
     width: 50%;
+    @media (max-width: 760px) { 
+      width: 75%;
+    }
   }
+  
 `;
 
 const Desc = styled.div`
   font-size: 20pt;
   margin-top: 20px;
+  @media (max-width: 760px) { 
+    font-size: 17pt;
+    margin-top: 10px;
+  }
 `;
 
 const Button = styled.div`
@@ -72,4 +83,8 @@ const Button = styled.div`
   margin-top: 50px;
   padding: 15px 50px 15px;
   cursor: pointer;
+  @media (max-width: 760px) { 
+    padding: 15px 50px;
+    font-size: 15pt;
+  }
 `;

@@ -45,6 +45,9 @@ const Wrapper = styled.div`
   max-width: 600px;
   padding: 40px 0 110px;
   text-align: center;
+  @media (max-width: 760px) { 
+    padding: 40px 15px 110px;
+  }
 `;
 
 const Contents = styled.div`
@@ -66,6 +69,9 @@ const LogoImage = styled.div`
 const Desc = styled.div`
   font-size: 20pt;
   margin-top: 20px;
+  @media (max-width: 760px) { 
+     font-size: 17pt;
+  }
 `;
 
 const ButtonGroup = styled.div`
@@ -80,4 +86,8 @@ const Button = styled.div`
   font-size: 25px;
   margin-bottom: 10px;
   cursor: pointer;
+  @media (max-width: 760px) { 
+    padding: 15px 50px;
+    font-size: 15pt;
+  }
 `;

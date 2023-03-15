@@ -47,4 +47,8 @@ const Button = styled.div`
   border-radius: 15px;
   font-size: 25px;
   cursor: pointer;
+  @media (max-width: 760px) { 
+     padding: 15px 50px;
+     font-size: 15pt;
+  }
 `;
